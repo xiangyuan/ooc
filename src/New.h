@@ -15,6 +15,6 @@ void * new(const void * type,...);
  * release the memory
  * @param item
  */
-void delete(void * item);
+void delete(void * ptr);
 
 #endif /* NEW_H_ */
