@@ -8,6 +8,8 @@
 #ifndef NEW_H_
 #define NEW_H_
 
+extern struct Class;
+
 //memory management
 void * new(const void * type,...);
 
