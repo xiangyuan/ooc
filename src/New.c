@@ -41,12 +41,12 @@ void * new(const void * _class,...) {
 	return ptr;
 }
 
-void delete(void * self) {
-	const struct Class ** ptr = self;
-	if (self && * ptr && (*ptr)->destructor) {
-		self = (*ptr)->destructor(self);
+void delete(void * _class) {
+	const struct Class ** ptr = _class;
+	if (_class && * ptr && (*ptr)->destructor) {
+		_class = (*ptr)->destructor(_class);
 	}
-	free(self);
+	free(_class);
 }
 
 

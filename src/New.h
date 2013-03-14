@@ -11,12 +11,12 @@
 extern struct Class;
 
 //memory management
-void * new(const void * type,...);
+void * new(const void * _class,...);
 
 /*
  * release the memory
  * @param item
  */
-void delete(void * ptr);
+void delete(void * _class);
 
 #endif /* NEW_H_ */

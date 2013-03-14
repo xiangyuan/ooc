@@ -1,3 +1,12 @@
 some c demo
 
 ooc book study source file
+
+if the object have contructor then the new implment map as
+
+ptr ---->object---->class
+|
+|
+target--- 
+
+ptr = **class
