@@ -48,7 +48,7 @@ void timeout_cb(int fd, short event, void *arg) {
         evhttp_cancel_request(hc->req);
     }
 }
-
+/*
 int main(int argc, char *argv[]) {
     struct http_client *hc = (struct http_client *)malloc(sizeof(struct http_client));
     hc->finished = 0;
@@ -85,3 +85,4 @@ int main(int argc, char *argv[]) {
    // event_free(&ev);
     return 0;
 }
+*/
